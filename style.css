@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css? family=Poppins:200,300,400,500,600,700,800,900& display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+}
+                                                             /* heder section start  */
+.containe
+{
+    position: relative;
+    padding: 0 100px;
+    min-height: 100vh;
+  
+}
+.containe:before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 380px;
+    background:#333;
+    z-index:-1;
+}
+
+
+heder
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+heder .logo
+{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+heder .logo:before 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-image: url(pic11.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    z-index: -1;
+    transition: 2.5s ease-in-out;
+}
+heder .logo:hover:before
+{
+    width: 68%;
+}
+
+heder .logo span
+{
+    color: #78ff00;
+}
+heder ul
+{
+    position: relative;
+    display: flex;
+}
+heder ul li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+heder ul li a
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #333;
+    text-transform: capitalize;
+}
+heder ul li:nth-child(3) a,
+heder ul li:nth-child(4) a
+{
+    color: #fff;
+}
+heder ul li a:before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #78ff00;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+
+}
+heder ul li a:hover:before
+{
+    width: 90%;
+} 
+heder ul li a.active:before
+{
+    width:40%;
+    
+}
+                                                               /* body section start  */
+
+section marquee 
+{
+    font-size: 30px;
+    color: #333;
+    padding: 85px 0px;
+    font-weight:500;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+    
+    
+}
+.box
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.box .box-text
+{
+  position: relative;
+  max-width:600px;  
+}
+.box-text h1
+{
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight:400;
+    color:#2e3033;
+    margin-bottom:30px;
+    border-left: solid 5px #66f711;
+}
+.box-text h1 span
+{
+    color: #66f711;
+}
+.box-text p
+{ 
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    margin-bottom: 10px;
+    
+}
+.box-text .btn
+{
+    font-size: 22px;
+    font-weight:500;
+    background-color:#66f711;
+    color: black;
+    padding: 10px 15px;
+    margin-left: 70px;
+    
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 10px 15px 20px;
+}
+.box-text .btn:hover
+{
+    background-color: black;
+    color:#66f711;
+    box-shadow: 0px 0px 0px;
+    font-weight: 700;
+    
+}
+
+                                                                     /* crad box start */
+
+.card-box
+{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    max-width: 800px;
+    
+}    
+.card-box .card1
+{
+    position: relative;
+    max-width: 350px;
+    padding: 10px;
+    box-shadow: 10px 10px 15px;
+    background-color: #f3f5f2; 
+    height: 150px;
+}                    
+
+.card-box .card1 h1
+{
+    text-transform: uppercase;
+    color: #78ff00;
+}                                             
+.card-box .card1 p
+{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    align-items: center;
+}
+
+.card-box .card2
+{
+    position: relative;
+    max-width: 350px;
+    height: 150px;
+    padding: 10px;
+    box-shadow: 10px 10px 15px;
+    background-color: #f3f5f2;
+    
+}                    
+.card-box .card2 h1
+{
+    text-transform: uppercase;
+    color: #78ff00;
+}                                             
+.card-box .card2 p
+{
+    font-size: 16px;
+    text-align: justify;
+    align-items: center;
+    line-height: 20px;
+}
